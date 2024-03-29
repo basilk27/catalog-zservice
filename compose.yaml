@@ -1,0 +1,11 @@
+services:
+
+  db:
+    image: postgres:14.4
+#    restart: always
+    environment:
+      - 'POSTGRES_DB=polardb_catalog'
+      - 'POSTGRES_PASSWORD=password'
+      - 'POSTGRES_USER=user'
+    ports:
+      - '5432:5432'
